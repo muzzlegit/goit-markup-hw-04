@@ -257,12 +257,13 @@ body {
 }
 
 .social .link {
-  display: inline-block;
+  display: flex;
+  display: inline-flex;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
-
+  align-items: center;
+  justify-content: center;
   fill: var(--icon-color);
 }
 
