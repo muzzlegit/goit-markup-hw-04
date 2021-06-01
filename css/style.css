@@ -200,10 +200,26 @@ body {
   display: block;
   height: 120px;
   margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: var(--black-text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.feature .item:not(:last-child) {
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.item:not(:last-child) {
   margin-right: 30px;
 }
 .feature-title {
@@ -309,18 +325,23 @@ body {
 .clients .item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-link::before {
-  content: '';
-  display: inline-block;
+.clients-link {
+  display: flex;
+  /* display: inline-flex; */
   height: 92px;
   width: 170px;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--icon-color);
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-link:hover::before,
-.clients-link:focus::before {
+.clients-link:hover,
+.clients-link:focus {
   cursor: pointer;
+  fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
 
@@ -467,11 +488,24 @@ body {
 .join-list {
   display: flex;
 }
-.join-list .social:not(:last-child) {
+.join-social .link {
+  display: flex;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-text-color);
+}
+.join-social:not(:last-child) {
   margin-right: 10px;
 }
-.join-list .social:hover,
-.join-list .social:focus {
+.join-social:hover,
+.join-social:focus {
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
   cursor: pointer;
 }
 
