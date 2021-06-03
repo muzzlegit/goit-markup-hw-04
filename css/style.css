@@ -111,6 +111,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: inherit;
+  fill: currentColor;
   text-decoration: none;
 }
 .contacts-link:hover,
@@ -440,7 +441,7 @@ body {
 }
 .box {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 .address-box {
   margin-right: 70px;
@@ -475,7 +476,7 @@ body {
   color: var(--accent-text-color);
 }
 .join {
-  margin-top: 12px;
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-weight: 700;
